@@ -8,6 +8,9 @@ namespace BookStore_API.Data
 {
     public class ApplicationDbContext : IdentityDbContext
     {
+        DbSet<Author> Authors { get; set; }
+        DbSet<Book> Books { get; set; }
+
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
