@@ -1,0 +1,36 @@
+2020-10-23 09:50:01.3347 INFO Attempted to create Author
+2020-10-23 09:50:01.6913 ERROR Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> Author
+System.Object -> BookStore_API.Data.Author - 
+2020-10-23 09:52:19.7425 INFO Attempted to create Author
+2020-10-23 09:52:20.0871 ERROR Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> Author
+System.Object -> BookStore_API.Data.Author - 
+2020-10-23 09:53:03.9170 INFO Attempted to create Author
+2020-10-23 09:53:56.0392 ERROR Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> Author
+System.Object -> BookStore_API.Data.Author - 
+2020-10-23 10:22:37.2893 INFO Attempted to create Author
+2020-10-23 10:22:53.2084 INFO Author created
+2020-10-23 11:35:31.8604 INFO Updating Author Attemped - ID: 1
+2020-10-23 11:35:31.9029 WARN Id or author invaild - ID: 1, Author: BookStore_API.DTOs.AuthorUpdateDTO
+2020-10-23 11:37:09.1133 INFO Updating Author Attemped - ID: 1
+2020-10-23 12:05:26.0858 INFO Trying to delete Author with ID - 2
+2020-10-23 12:05:28.3728 WARN Could not find Author with ID: 2
+2020-10-23 12:06:33.7997 INFO Trying to delete Author with ID - 2
+2020-10-23 12:06:33.8717 WARN Could not find Author with ID: 2
+2020-10-23 12:06:46.8519 INFO Trying to delete Author with ID - 2
+2020-10-23 12:06:57.2941 WARN Could not find Author with ID: 2
+2020-10-23 12:07:38.3419 INFO Trying to delete Author with ID - 0
+2020-10-23 12:07:38.3566 WARN Bad ID: 0
+2020-10-23 12:09:29.6364 INFO Trying to delete Author with ID: 1
+2020-10-23 12:10:19.8414 INFO Author with ID: 1 was deleted
+2020-10-23 12:14:08.6073 INFO Updating Author Attemped - ID: 1
+2020-10-23 12:14:12.3687 ERROR Database operation expected to affect 1 row(s) but actually affected 0 row(s). Data may have been modified or deleted since entities were loaded. See http://go.microsoft.com/fwlink/?LinkId=527962 for information on understanding and handling optimistic concurrency exceptions. - 
+2020-10-23 12:14:35.1743 INFO Updating Author Attemped - ID: 1

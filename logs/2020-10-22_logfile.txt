@@ -1,1 +1,9 @@
 2020-10-22 10:33:51.6070 WARN Test Warning Log
+2020-10-22 16:47:24.3689 INFO Attempted to get all Authors
+2020-10-22 16:47:26.9967 INFO Successfully got all Authors
+2020-10-22 16:51:24.3393 INFO Attempted to get all Authors
+2020-10-22 16:51:42.1791 ERROR A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) - System.ComponentModel.Win32Exception (53): The network path was not found.
+2020-10-22 17:14:18.8571 INFO Attempted to get Author with Id: 1
+2020-10-22 17:14:21.2739 WARN Author with Id: 1 was not found
+2020-10-22 17:16:09.3185 INFO Attempted to get Author with Id: 1
+2020-10-22 17:16:11.6074 WARN Author with Id: 1 was not found

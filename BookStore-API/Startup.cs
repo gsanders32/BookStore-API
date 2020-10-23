@@ -52,13 +52,15 @@ namespace BookStore_API
 
             services.AddSwaggerGen(x =>
             {
-                x.SwaggerDoc("v1", new OpenApiInfo { Title = " HPWD-API", Version = "v1", Description = "HPWD-API" });
+                x.SwaggerDoc("v1", new OpenApiInfo { Title = " BookStore-API", Version = "v1", Description = "BookStore-API" });
                 var xFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
                 var xPath = Path.Combine(AppContext.BaseDirectory, xFile);
                 x.IncludeXmlComments(xPath);
             });
 
             services.AddSingleton<ILoggerService, LoggerService>();
+            services.AddScoped<IAuthorRepository, AuthorRepository>();
+            services.AddScoped<IBookRepository, BookRepository>();
 
             services.AddControllers();
         }
