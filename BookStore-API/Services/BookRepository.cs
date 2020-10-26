@@ -30,19 +30,20 @@ namespace BookStore_API.Services
 
         public async Task<IList<Book>> FindAll()
         {
-            var Books = await _db.Books.ToListAsync();
-            return Books;
+            var books = await _db.Books.ToListAsync();
+            return books;
         }
 
         public async Task<Book> FindById(int id)
         {
-            Book Book = await _db.Books.FirstOrDefaultAsync(a => a.Id == id);
-            return Book;
+            Book book = await _db.Books.FirstOrDefaultAsync(b => b.Id == id);
+            return book;
         }
 
         public async Task<bool> isExists(int id)
         {
-            return await _db.Books.AnyAsync(b => b.Id == id);
+            var isExists = await _db.Books.AnyAsync(b => b.Id == id);
+            return isExists;
         }
 
         public async Task<bool> Save()

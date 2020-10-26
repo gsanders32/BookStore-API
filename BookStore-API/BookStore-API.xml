@@ -44,6 +44,32 @@
             <param name="id"></param>
             <returns></returns>
         </member>
+        <member name="T:BookStore_API.Controllers.BooksController">
+            <summary>
+            Books API
+            </summary>
+        </member>
+        <member name="M:BookStore_API.Controllers.BooksController.GetBooks">
+            <summary>
+            Get All Books
+            </summary>
+            <returns>List of Books</returns>
+        </member>
+        <member name="M:BookStore_API.Controllers.BooksController.GetBook(System.Int32)">
+            <summary>
+            Get book by ID
+            </summary>
+            <param name="id"></param>
+            <returns>One book</returns>
+        </member>
+        <member name="M:BookStore_API.Controllers.BooksController.Create(BookStore_API.DTOs.BookCreateDTO)">
+            <summary>
+            Create new book
+            </summary>
+            <param name="book"></param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:BookStore_API.Controllers.BooksController.Update(System.Int32,BookStore_API.DTOs.BookUpdateDTO)" -->
         <member name="T:BookStore_API.Controllers.HomeController">
             <summary>
             This is a test API Controller

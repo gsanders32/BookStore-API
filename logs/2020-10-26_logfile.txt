@@ -1,0 +1,10 @@
+2020-10-26 10:36:07.2352 INFO Authors - Create: Attempted to create Author
+2020-10-26 10:36:10.4877 INFO Authors - Create: Author created
+2020-10-26 10:37:23.0143 INFO Books - Create: Create Attempted
+2020-10-26 10:37:23.2322 INFO Books - Create: Creation was successful: BookStore_API.Data.Book
+2020-10-26 11:18:43.9192 INFO Authors - GetAuthors: Attempted to get all Authors
+2020-10-26 11:18:47.1174 INFO Authors - GetAuthors: Successfully got all Authors
+2020-10-26 11:18:58.4364 INFO Books - GetBooks: Trying to get list
+2020-10-26 11:18:59.6703 ERROR Books - GetBooks: Unable to cast object of type 'System.Decimal' to type 'System.Double'. - 
+2020-10-26 11:25:43.0312 INFO Books - GetBooks: Trying to get list
+2020-10-26 11:25:46.0278 INFO Books - GetBooks: Books returned

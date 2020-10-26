@@ -1,0 +1,6 @@
+2020-10-25 18:08:29.3116 INFO Books - GetBooks: Trying to get list
+2020-10-25 18:08:31.8760 INFO Books - GetBooks: Books returned
+2020-10-25 18:09:56.6643 INFO Books - GetBook: Trying to get book by ID: -1
+2020-10-25 18:09:56.9651 WARN Books - GetBook: No book found with ID: -1
+2020-10-25 18:10:44.4320 INFO Books - GetBook: Trying to get book by ID: 1
+2020-10-25 18:10:44.4706 WARN Books - GetBook: No book found with ID: 1
