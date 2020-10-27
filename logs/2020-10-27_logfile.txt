@@ -1,0 +1,14 @@
+2020-10-27 12:12:11.9726 INFO Users - Login: Attempt from users admin
+2020-10-27 12:12:12.4476 INFO Users - Login: admin successfully Authenticated
+2020-10-27 12:32:16.8826 INFO Authors - GetAuthors: Attempted to get all Authors
+2020-10-27 12:32:17.0678 INFO Authors - GetAuthors: Successfully got all Authors
+2020-10-27 12:32:55.6646 INFO Authors - GetAuthor: Attempted to get Author with Id: 2
+2020-10-27 12:32:55.7244 INFO Authors - GetAuthor: Successfully got Author with Id: 2
+2020-10-27 12:34:24.5029 INFO Users - Login: Attempt from users admin
+2020-10-27 12:34:24.9007 INFO Users - Login: admin successfully Authenticated
+2020-10-27 12:35:23.5446 INFO Authors - Create: Attempted to create Author
+2020-10-27 12:35:24.1313 INFO Authors - Create: Author created
+2020-10-27 12:35:47.4835 INFO Authors - GetAuthors: Attempted to get all Authors
+2020-10-27 12:35:47.6670 INFO Authors - GetAuthors: Successfully got all Authors
+2020-10-27 12:37:48.5541 INFO Users - Login: Attempt from users admin
+2020-10-27 12:37:48.7151 INFO Users - Login: admin successfully Authenticated
