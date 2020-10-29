@@ -8,6 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Claims;
@@ -34,32 +35,80 @@ namespace BookStore_API.Controllers
         }
 
         /// <summary>
-        /// User Login
+        /// Register new user
         /// </summary>
-        /// <param name="userDTO"></param>
+        /// <param name="user"></param>
         /// <returns></returns>
+        [Route("register")]
+        [HttpPost]
+        [AllowAnonymous]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public async Task<IActionResult> Register([FromBody] UserDTO userDTO)
+        {
+            var location = GetControllerActionNames();
+            try
+            {
+                var userEmail = userDTO.EmailAddress;
+                var userPassword = userDTO.Password;
+                _logger.LogInfo($"{location}: Registration attempt for {userEmail}");
+                var user = new IdentityUser { Email = userEmail, UserName = userEmail };
+                var result = await _userManager.CreateAsync(user, userPassword);
+                if (!result.Succeeded)
+                {
+                    foreach (var error in result.Errors)
+                    {
+                        _logger.LogError($"{location}: {error.Code} {error.Description}");
+                    }
+                    return InternalError($"{location}: {userEmail} User Registration Attempt Failed");
+                }
+                _logger.LogInfo($"{location}: Registration succesded for {userEmail}");
+                await _userManager.AddToRoleAsync(user, "Customer");
+                return Ok(new { result.Succeeded });
+            }
+            catch (Exception e)
+            {
+                return InternalError($"{location}: {e.Message} - {e.InnerException}");
+            }
+        }
+
+        /// <summary>
+        /// Login User
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns></returns>
+        [Route("login")]
         [AllowAnonymous]
         [HttpPost]
+        
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> Login([FromBody] UserDTO userDTO)
         {
             var location = GetControllerActionNames();
             try
             {
-                var userName = userDTO.UserName;
+                var userEmail = userDTO.EmailAddress;
                 var password = userDTO.Password;
-                _logger.LogInfo($"{location}: Attempt from users {userName}");
-                
-                var result = await _signManager.PasswordSignInAsync(userName, password, false, false);
+                _logger.LogInfo($"{location}: Attempt from users {userEmail}");
+
+                var user = await _userManager.FindByEmailAsync(userEmail);
+                if (user == null)
+                {
+                    _logger.LogError($"{location}: {userEmail} Not Found");
+                    return Unauthorized(userDTO);
+                }
+                var result = await _signManager.PasswordSignInAsync(user.UserName, password, false, false);
                 if (result.Succeeded)
                 {
-                    _logger.LogInfo($"{location}: {userName} successfully Authenticated");
-                    var user = await _userManager.FindByNameAsync(userName);
+                    _logger.LogInfo($"{location}: {userEmail} successfully Authenticated");
+                    //var user = await _userManager.FindByEmailAsync(userEmail);
                     string tokenString = await GenerateJSONWebToken(user);
                     return Ok(new { token = tokenString});
                 }
-                _logger.LogWarn($"{location}: {userName} Not Authenticated");
+                _logger.LogWarn($"{location}: {userEmail} Not Authenticated");
                 return Unauthorized(userDTO);
-            }
+            } 
             catch (Exception e)
             {
                 return InternalError($"{location}: {e.Message} - {e.InnerException}");
@@ -74,6 +123,7 @@ namespace BookStore_API.Controllers
             var claims = new List<Claim>
             {
                 new Claim(JwtRegisteredClaimNames.Sub, user.Email),
+                new Claim(JwtRegisteredClaimNames.Actort, user.UserName),
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
                 new Claim(ClaimTypes.NameIdentifier, user.Id)
             };

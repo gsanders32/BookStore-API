@@ -19,10 +19,10 @@ namespace BookStore_API.Data
             {
                 var user = new IdentityUser
                 {
-                    UserName = "admin",
-                    Email = "admin@bookstore.com"
+                    UserName = "admin@gmail.com",
+                    Email = "admin@gmail.com"
                 };
-                var result = await userManager.CreateAsync(user, "P@ssword1");
+                var result = await userManager.CreateAsync(user, "Admin123$");
                 if (result.Succeeded)
                 {
                     await userManager.AddToRoleAsync(user, "Administrator");
@@ -32,10 +32,10 @@ namespace BookStore_API.Data
             {
                 var user = new IdentityUser
                 {
-                    UserName = "customer",
-                    Email = "customer@gmail.com"
+                    UserName = "cust@gmail.com",
+                    Email = "cust@gmail.com"
                 };
-                var result = await userManager.CreateAsync(user, "P@ssword1");
+                var result = await userManager.CreateAsync(user, "Admin123$");
                 if (result.Succeeded)
                 {
                     await userManager.AddToRoleAsync(user, "Customer");

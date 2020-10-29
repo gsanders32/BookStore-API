@@ -1,0 +1,48 @@
+2020-10-29 07:55:06.9751 WARN Users - Login: admin@bookstore.com Not Authenticated
+2020-10-29 07:55:22.6298 INFO Users - Login: Attempt from users admin@bookstore.com
+2020-10-29 07:55:31.1474 WARN Users - Login: admin@bookstore.com Not Authenticated
+2020-10-29 08:00:26.2114 INFO Users - Login: Attempt from users admin@bookstore.com
+2020-10-29 08:00:34.0304 WARN Users - Login: admin@bookstore.com Not Authenticated
+2020-10-29 08:03:24.8327 INFO Users - Login: Attempt from users admin@bookstore.com
+2020-10-29 08:03:24.9958 WARN Users - Login: admin@bookstore.com Not Authenticated
+2020-10-29 08:05:28.8152 INFO Users - Login: Attempt from users admin@bookstore.com
+2020-10-29 08:05:29.1235 WARN Users - Login: admin@bookstore.com Not Authenticated
+2020-10-29 08:10:45.6760 INFO Users - Login: Attempt from users admin@bookstore.com
+2020-10-29 09:00:35.2862 INFO Users - Login: admin@bookstore.com successfully Authenticated
+2020-10-29 09:03:38.1830 INFO Users - Register: Registration attempt for user@gmail.com
+2020-10-29 09:03:46.2137 INFO Users - Register: Registration succesded for user@gmail.com
+2020-10-29 09:06:49.4501 INFO Users - Login: Attempt from users user@gmail.com
+2020-10-29 09:06:55.0694 INFO Users - Login: user@gmail.com successfully Authenticated
+2020-10-29 09:14:20.6653 INFO Users - Login: Attempt from users admin@bookstore.com
+2020-10-29 09:14:46.7206 INFO Users - Login: admin@bookstore.com successfully Authenticated
+2020-10-29 09:16:58.7757 INFO Users - Login: Attempt from users admin@bookstore.com
+2020-10-29 09:17:13.4709 INFO Users - Login: admin@bookstore.com successfully Authenticated
+2020-10-29 09:22:08.2794 INFO Users - Login: Attempt from users admin@bookstore.com
+2020-10-29 09:22:19.5149 INFO Users - Login: admin@bookstore.com successfully Authenticated
+2020-10-29 09:23:14.1718 INFO Users - Login: Attempt from users admin@bookstor.com
+2020-10-29 09:26:58.2313 INFO Users - Login: Attempt from users admin@bookstore.com
+2020-10-29 09:26:58.5523 INFO Users - Login: admin@bookstore.com successfully Authenticated
+2020-10-29 09:27:27.4061 INFO Users - Login: Attempt from users admin@bookstor.com
+2020-10-29 09:27:44.6726 ERROR Users - Login: Object reference not set to an instance of an object. - 
+2020-10-29 09:29:06.0907 INFO Users - Login: Attempt from users admin@bookstor.com
+2020-10-29 09:29:37.8512 ERROR Users - Login: Object reference not set to an instance of an object. - 
+2020-10-29 09:31:52.5159 INFO Users - Login: Attempt from users admin@bookstor.com
+2020-10-29 09:31:57.0331 ERROR Users - Login: admin@bookstor.com Not Found
+2020-10-29 09:32:25.3156 INFO Users - Login: Attempt from users admin@bookstore.com
+2020-10-29 09:32:25.7727 INFO Users - Login: admin@bookstore.com successfully Authenticated
+2020-10-29 10:23:42.3106 INFO Users - Login: Attempt from users admin@bookstore.com
+2020-10-29 10:23:43.0849 INFO Users - Login: admin@bookstore.com successfully Authenticated
+2020-10-29 10:34:40.7956 INFO Users - Login: Attempt from users admin@bookstore.com
+2020-10-29 10:34:41.6035 INFO Users - Login: admin@bookstore.com successfully Authenticated
+2020-10-29 10:45:08.5300 INFO Users - Login: Attempt from users admin@bookstore.com
+2020-10-29 10:45:08.8492 INFO Users - Login: admin@bookstore.com successfully Authenticated
+2020-10-29 10:45:30.8839 INFO Users - Login: Attempt from users user@gmail.com
+2020-10-29 10:45:30.9319 INFO Users - Login: user@gmail.com successfully Authenticated
+2020-10-29 10:47:44.8281 INFO Users - Login: Attempt from users cust@gmail.com
+2020-10-29 10:47:44.9168 ERROR Users - Login: cust@gmail.com Not Found
+2020-10-29 10:48:20.4743 INFO Users - Login: Attempt from users customer@gmail.com
+2020-10-29 10:48:20.8810 INFO Users - Login: customer@gmail.com successfully Authenticated
+2020-10-29 10:53:56.8592 INFO Users - Register: Registration attempt for test@test.com
+2020-10-29 10:54:08.6363 INFO Users - Register: Registration succesded for test@test.com
+2020-10-29 10:54:18.1253 INFO Users - Login: Attempt from users test@test.com
+2020-10-29 10:54:18.3881 INFO Users - Login: test@test.com successfully Authenticated

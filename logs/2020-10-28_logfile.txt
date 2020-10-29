@@ -1,0 +1,49 @@
+2020-10-28 14:08:28.1457 INFO Users - Login: Attempt from users test@test.com
+2020-10-28 14:08:28.4993 INFO Users - Login: test@test.com successfully Authenticated
+2020-10-28 14:09:38.5906 INFO Users - Login: Attempt from users test@test.com
+2020-10-28 14:09:38.6712 INFO Users - Login: test@test.com successfully Authenticated
+2020-10-28 14:12:27.3402 INFO Users - Login: Attempt from users test@test.com
+2020-10-28 14:12:27.4601 WARN Users - Login: test@test.com Not Authenticated
+2020-10-28 14:13:04.0496 INFO Users - Login: Attempt from users test@test.com
+2020-10-28 14:13:04.1312 INFO Users - Login: test@test.com successfully Authenticated
+2020-10-28 15:22:22.8957 INFO Users - Login: Attempt from users test@test.com
+2020-10-28 15:22:23.1740 INFO Users - Login: test@test.com successfully Authenticated
+2020-10-28 15:24:33.1890 INFO Users - Login: Attempt from users test@test.com
+2020-10-28 15:24:33.2586 INFO Users - Login: test@test.com successfully Authenticated
+2020-10-28 15:28:39.1121 INFO Users - Login: Attempt from users test@test.com
+2020-10-28 15:28:39.4856 INFO Users - Login: test@test.com successfully Authenticated
+2020-10-28 15:33:40.8827 INFO Users - Login: Attempt from users test@test.com
+2020-10-28 15:33:41.2257 INFO Users - Login: test@test.com successfully Authenticated
+2020-10-28 15:42:06.0038 INFO Users - Login: Attempt from users test@test.com
+2020-10-28 15:42:06.3121 INFO Users - Login: test@test.com successfully Authenticated
+2020-10-28 15:42:40.0649 INFO Users - Login: Attempt from users admin@bookstore.com
+2020-10-28 15:42:40.1024 WARN Users - Login: admin@bookstore.com Not Authenticated
+2020-10-28 15:43:12.4484 INFO Users - Login: Attempt from users admin@bookstore.com
+2020-10-28 15:43:12.4683 WARN Users - Login: admin@bookstore.com Not Authenticated
+2020-10-28 15:43:42.4409 INFO Users - Login: Attempt from users admin@bookstore.com
+2020-10-28 15:43:42.4409 WARN Users - Login: admin@bookstore.com Not Authenticated
+2020-10-28 15:45:13.4382 INFO Users - Login: Attempt from users admin@bookstore.com
+2020-10-28 15:45:13.4418 WARN Users - Login: admin@bookstore.com Not Authenticated
+2020-10-28 15:45:48.0782 INFO Users - Login: Attempt from users admin@bookstore.com
+2020-10-28 15:45:48.1071 WARN Users - Login: admin@bookstore.com Not Authenticated
+2020-10-28 15:46:43.9654 INFO Users - Login: Attempt from users admin@bookstore.com
+2020-10-28 15:46:43.9827 WARN Users - Login: admin@bookstore.com Not Authenticated
+2020-10-28 15:49:10.4441 INFO Users - Login: Attempt from users admin@bookstore.com
+2020-10-28 15:49:10.5864 WARN Users - Login: admin@bookstore.com Not Authenticated
+2020-10-28 15:52:57.7228 INFO Users - Login: Attempt from users admin@bookstore.com
+2020-10-28 15:52:57.8379 WARN Users - Login: admin@bookstore.com Not Authenticated
+2020-10-28 15:54:14.7102 INFO Users - Login: Attempt from users admin@bookstore.com
+2020-10-28 15:54:14.7362 WARN Users - Login: admin@bookstore.com Not Authenticated
+2020-10-28 15:54:26.3975 INFO Users - Login: Attempt from users admin@bookstore.com
+2020-10-28 15:54:26.3975 WARN Users - Login: admin@bookstore.com Not Authenticated
+2020-10-28 15:57:57.8986 INFO Users - Login: Attempt from users admin@bookstore.com
+2020-10-28 15:57:58.0593 WARN Users - Login: admin@bookstore.com Not Authenticated
+2020-10-28 15:58:40.7786 INFO Users - Login: Attempt from users admin@bookstore.com
+2020-10-28 16:09:51.1215 INFO Users - Login: Attempt from users admin@bookstore.com
+2020-10-28 16:10:02.7257 WARN Users - Login: admin@bookstore.com Not Authenticated
+2020-10-28 16:10:14.5191 INFO Users - Login: Attempt from users admin@bookstore.com
+2020-10-28 16:10:14.5955 WARN Users - Login: admin@bookstore.com Not Authenticated
+2020-10-28 16:15:13.0160 INFO Users - Login: Attempt from users admin@bookstore.com
+2020-10-28 16:18:23.4582 INFO Users - Login: Attempt from users admin@bookstore.com
+2020-10-28 16:19:25.1784 WARN Users - Login: admin@bookstore.com Not Authenticated
+2020-10-28 16:19:34.0662 INFO Users - Login: Attempt from users admin@bookstore.com

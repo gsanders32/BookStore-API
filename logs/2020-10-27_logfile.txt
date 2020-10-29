@@ -12,3 +12,11 @@
 2020-10-27 12:35:47.6670 INFO Authors - GetAuthors: Successfully got all Authors
 2020-10-27 12:37:48.5541 INFO Users - Login: Attempt from users admin
 2020-10-27 12:37:48.7151 INFO Users - Login: admin successfully Authenticated
+2020-10-27 15:42:38.1277 INFO Users - Register: Registration Attempt for user@example.com
+2020-10-27 15:42:38.2212 ERROR Users - Register: PasswordRequiresNonAlphanumeric Passwords must have at least one non alphanumeric character.
+2020-10-27 15:42:38.2221 ERROR Users - Register: PasswordRequiresDigit Passwords must have at least one digit ('0'-'9').
+2020-10-27 15:42:38.2221 ERROR Users - Register: PasswordRequiresUpper Passwords must have at least one uppercase ('A'-'Z').
+2020-10-27 15:42:38.2221 ERROR Users - Register: user@example.com User Registration Attempt Failed
+2020-10-27 15:44:14.4603 INFO Users - Register: Registration Attempt for user@example.com
+2020-10-27 17:22:02.5821 INFO Users - Register: Registration attempt for test@test.com
+2020-10-27 17:22:05.3252 INFO Users - Register: Registration succesded for test@test.com
